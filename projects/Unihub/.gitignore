@@ -1,0 +1,32 @@
+# Root .gitignore for UniHub
+
+# Node modules
+node_modules/
+**/node_modules/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+/dist
+/build
+client/dist
+
+# Uploaded user files (do not commit uploads)
+/server/uploads/
+uploads/
+
+# Logs
+logs
+*.log
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Misc
+*.local

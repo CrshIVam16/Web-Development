@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+
+  /* Optional: make default body background consistent (smoother) */
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50;
+  }
+}
+
+/* Reusable UI building blocks (DRY) */
+@layer components {
+
+  /* Default card surface (clearer border in light mode) */
+  /* --- Global UI helpers (cards/buttons) --- */
+  .card {
+    @apply rounded-xl border bg-white shadow-sm;
+    @apply border-slate-200/70;
+    @apply dark:bg-slate-900/60 dark:border-slate-800/70;
+    /* Less “shiny” than heavy shadows on pure black */
+    @apply dark:shadow-none;
+  }
+
+  /* Muted surface for preview blocks */
+  .card-muted {
+    @apply rounded-xl border bg-slate-50;
+    @apply border-slate-200/70;
+    @apply dark:bg-slate-900/30 dark:border-slate-800/70;
+  }
+
+  .btn-primary {
+    @apply rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700;
+  }
+
+  .btn-outline {
+    @apply rounded-lg border border-gray-300/70 bg-white px-4 py-2 text-sm hover:bg-gray-100 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-900;
+  }
+
+  /* Muted text helper (many pages use "muted" class) */
+  .muted {
+    @apply text-slate-600 dark:text-slate-400;
+  }
+}
