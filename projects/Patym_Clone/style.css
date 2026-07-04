@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer utilities {
+
+    .nila{
+        background-color: #00BAF2;
+    }
+
+    .bg-whitesmoke {
+        background-color: whitesmoke;
+    }
+
+    .text-vs{
+        font-size: 8px;
+    }
+
+}
