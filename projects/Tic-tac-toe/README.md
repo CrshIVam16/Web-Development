@@ -13,7 +13,7 @@ A simple browser-based Tic-Tac-Toe game built with HTML, CSS, and JavaScript.
 - [index.html](index.html) — Main game layout
 - [style.css](style.css) — Styling for the board and UI
 - [script.js](script.js) — Game logic, win/draw detection, and reset behavior
-- Hosted demo: [live-link](https://cr-password-generator.netlify.app/)
+- Hosted demo: [live-link](https://cr-tic-tac-toe.netlify.app/)
 
 ## How to Run
 1. Open [index.html](index.html) in your browser, or
