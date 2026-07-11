@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: black;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    /* border: 1px solid white; */
+}
+
+h1 {
+    color: white;
+}
+
+.boxes {
+    display: grid;
+    /* width: 300px;
+    height: 300px; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    color: white;
+    /* border: 1px solid white; */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 24px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100px;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.winnerClass{
+    background-color: grey;
+}
