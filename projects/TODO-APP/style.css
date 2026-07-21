@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#fill {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 20px; */
+    border: 1px solid white;
+    padding: 10px;
+}
+
+#todo {
+    width: 350px;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#lists {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 5px;
+    border: 1px solid white;
+}
+
+.list {
+    /* font-size: 18px; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 10px; */
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.list span {
+    width: 300px;
+    overflow-wrap: break-word;
+    /* border: 1px solid white; */
+}
+
+.inner {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid white; */
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+#btn1 {
+    background-color: greenyellow;
+}
+
+.clear,
+#clearAll {
+    background-color: rgba(240, 56, 56, 0.916);
+}
+
+@media(max-width:500px) {
+
+    #lists,
+    #fill {
+        width: 90%;
+        border: 1px solid white;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #todo {
+        width: 100%;
+    }
+}
