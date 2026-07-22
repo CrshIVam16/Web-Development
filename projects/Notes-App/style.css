@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+    /* border: 1px solid white; */
+}
+
+#notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* background-color: aqua; */
+    padding: 20px;
+}
+
+.note {
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: yellow;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.top button,
+#btn1 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: wheat;
+}
+
+.bottom {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    overflow-y: scroll;
+    background-color: blueviolet;
+    overflow: hidden;
+}
+
+.txt {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+::-webkit-scrollbar {
+    scrollbar-width: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.now {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.apply {
+    width: 800px;
+    height: 500px;
+}
+
+@media(max-width:875px) {
+    .note {
+        width: 48%;
+    }
+
+    #notes {
+        padding: 10px;
+    }
+
+    .apply {
+        min-width: 600px;
+        min-height: 500px;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+@media(max-width:635px) {
+    .note {
+        width: 48%;
+    }
+
+    .apply {
+        min-width: 480px;
+        min-height: 500px;
+    }
+}
+
+@media(max-width:550px) {
+    .note {
+        width: 100%;
+    }
+
+    .apply {
+        min-width: 50%;
+    }
+}
+
+@media(max-width:310px) {
+
+    #notes {
+        width: 100%;
+    }
+
+    .note {
+        min-width: 10%;
+        height: 400px;
+        font-size: 16px;
+    }
+
+    .top {
+        width: 100%;
+        padding: 0 60px;
+    }
+
+    .top button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
