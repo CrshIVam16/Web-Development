@@ -8,6 +8,7 @@ A simple browser-based Tic-Tac-Toe game built with HTML, CSS, and JavaScript.
 - Winner detection for all standard winning combinations
 - Draw detection when the board is full
 - Reset button to start a new round
+- Added minimax algo for playing with computer
 
 ## Project Files
 - [index.html](index.html) — Main game layout
