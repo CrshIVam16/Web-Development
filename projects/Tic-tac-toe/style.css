@@ -14,7 +14,12 @@
     align-items: center;
     gap: 20px;
     overflow: hidden;
+    color: white;
     /* border: 1px solid white; */
+}
+
+.mode-toggle {
+    font-size: 18px;
 }
 
 h1 {
@@ -53,6 +58,6 @@ h1 {
     cursor: pointer;
 }
 
-.winnerClass{
+.winnerClass {
     background-color: grey;
 }
